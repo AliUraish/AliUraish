@@ -119,7 +119,7 @@ h2 { margin: 0 0 18px; padding-bottom: 4px; border-bottom: 1px solid var(--line)
 /* projects page */
 .projects { margin-top: 40px; }
 .projects:first-of-type { margin-top: 28px; }
-.projects .note { margin: -8px 0 18px; font-size: 13px; font-style: italic; color: var(--dim); }
+.projects .note { margin: -8px 0 18px; font-size: 14px; font-style: italic; color: var(--body); }
 .projects ul { list-style: none; margin: 0; padding: 0; }
 .projects li { padding: 20px 0; border-top: 1px solid var(--line); }
 .projects li:first-child { border-top: 0; padding-top: 0; }
