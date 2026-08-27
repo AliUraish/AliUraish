@@ -1,11 +1,8 @@
 <p align="center">
-  <img src="assets/so101-arm.svg" alt="An SO-101 robot arm picking up a box that says: Hi, how are you?" width="100%">
+  <img src="assets/so101-arm.svg" alt="A robot arm picks up a box, turns it around, and shows: Hi, how are you?" width="100%">
 </p>
 
 # Ali Uraish
-
-Founder of [Machanize](https://machanize.com/). Previously founder & CTO of [AgentBasis](https://www.agentbasis.co/).
-I started coding at 13 with C++, went from Arduino robots to AI agents, and now back to hardware.
 
 ## Now
 
