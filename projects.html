@@ -30,9 +30,11 @@
         <li>
           <h3>EnvBasis</h3>
           <p>
-            Open-source secret management built for AI agents. Store API keys once,
-            hand the agent a short-lived runtime token, then rotate, revoke, and audit
-            access without rebuilding or redeploying. Built with my brother.
+            An open-source credential proxy for AI agents. The agent never holds a real
+            API key: it calls OpenAI, Anthropic, or GitHub through the EnvBasis proxy with a
+            short-lived runtime token, and the proxy swaps that token for the real credential
+            on the way out. Store keys once, then rotate, revoke, and audit access without
+            rebuilding or redeploying.
           </p>
           <a href="https://github.com/RahimMirani/envbasis" target="_blank" rel="noreferrer">github.com/RahimMirani/envbasis &rarr;</a>
         </li>
