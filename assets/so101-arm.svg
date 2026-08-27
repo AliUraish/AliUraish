@@ -12,8 +12,8 @@
 @keyframes sideT{0%,36%{transform:scale(1,1)}46%,68%{transform:scale(0.15,1)}78%,100%{transform:scale(1,1)}}
 @keyframes frontT{0%,36%{transform:scale(0.15,1)}46%,68%{transform:scale(1,1)}78%,100%{transform:scale(0.15,1)}}
 @keyframes c0{0%{opacity:1}20%{opacity:0}93%{opacity:1}100%{opacity:1}}
-@keyframes c1{0%{opacity:0}20%{opacity:1}46%{opacity:0}68%{opacity:1}93%{opacity:0}100%{opacity:0}}
-@keyframes c2{0%{opacity:0}46%{opacity:1}68%{opacity:0}100%{opacity:0}}
+@keyframes c1{0%{opacity:0}20%{opacity:1}36%{opacity:0}78%{opacity:1}93%{opacity:0}100%{opacity:0}}
+@keyframes c2{0%{opacity:0}36%{opacity:1}78%{opacity:0}100%{opacity:0}}
 @keyframes tx{0%,42%{opacity:0}46%,68%{opacity:1}72%,100%{opacity:0}}
 .k{fill:#111;stroke:#fff;stroke-width:2.5;stroke-linejoin:round}.d{fill:#fff}
 .t{font:700 15px -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;fill:#fff;text-anchor:middle}
