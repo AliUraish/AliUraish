@@ -16,14 +16,16 @@
 html, body { margin: 0; background: var(--bg); }
 body { min-height: 100vh; display: flex; flex-direction: column; -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }
-p a, .what a, .bottom p a { border-bottom: 1px solid var(--dim); transition: border-color 150ms ease; }
-p a:hover, .what a:hover, .bottom p a:hover { border-color: var(--fg); }
+p a, .what a, .catalog li a, .bottom p a { border-bottom: 1px solid var(--dim); transition: border-color 150ms ease; }
+p a:hover, .what a:hover, .catalog li a:hover, .bottom p a:hover { border-color: var(--fg); }
+p a.win95, p a.win95:hover { border-bottom: 0; }
 ::selection { background: var(--fg); color: var(--bg); }
 
 .top, .bottom, main { width: var(--w); margin: 0 auto; }
 
 /* header */
 .top { height: 84px; display: flex; align-items: center; justify-content: flex-end; }
+.top:has(.win95) { justify-content: space-between; }
 
 /* icons */
 .icons { display: flex; align-items: center; gap: 16px; }
@@ -71,6 +73,127 @@ h2 { margin: 0 0 18px; padding-bottom: 4px; border-bottom: 1px solid var(--line)
 .what p { margin: 0; font-size: 15px; line-height: 1.6; color: var(--body); }
 .what > a { display: inline-block; margin-top: 10px; font-size: 14px; }
 
+/* win95 button */
+.to-catalog { margin: 48px 0 0; }
+.win95 {
+  --face: #c3c3c3;
+  --hi: #fff;
+  --lo: #000;
+  --mid: #808080;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  height: 28px;
+  padding: 0 14px;
+  background: var(--face);
+  color: #000;
+  font-family: Tahoma, "MS Sans Serif", "Segoe UI", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1;
+  border: 0;
+  box-shadow:
+    inset -1px -1px var(--lo),
+    inset 1px 1px var(--hi),
+    inset -2px -2px var(--mid),
+    inset 2px 2px #dfdfdf;
+  cursor: default;
+  user-select: none;
+}
+.win95:hover { color: #000; }
+.win95:active {
+  box-shadow:
+    inset -1px -1px var(--hi),
+    inset 1px 1px var(--lo),
+    inset -2px -2px #dfdfdf,
+    inset 2px 2px var(--mid);
+  padding: 1px 13px 0 15px;
+}
+.win95:focus-visible {
+  outline: 1px dotted #000;
+  outline-offset: -5px;
+}
+
+/* catalog page */
+.catalog {
+  margin-top: 0;
+  border: 1px solid var(--line);
+  background: #0a0a0a;
+}
+.catalog-titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  min-height: 44px;
+  background: #141414;
+  border-bottom: 1px solid var(--line);
+}
+.catalog-titlebar h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.catalog-body { padding: 0; }
+.catalog-group {
+  display: grid;
+  grid-template-columns: 148px minmax(0, 1fr);
+  border-top: 1px solid var(--line);
+}
+.catalog-group:first-child { border-top: 0; }
+.catalog-label {
+  padding: 16px 14px;
+  background: #141414;
+  border-right: 1px solid var(--line);
+}
+.catalog-label h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.35;
+  font-family: inherit;
+  color: var(--fg);
+}
+.catalog-label p {
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--dim);
+  font-style: italic;
+}
+.catalog-group ul { list-style: none; margin: 0; padding: 0; }
+.catalog-group li {
+  padding: 16px 18px;
+  border-top: 1px solid var(--line);
+}
+.catalog-group li:first-child { border-top: 0; }
+.catalog-group h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.place {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--dim);
+}
+.catalog-group li p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--body);
+}
+.catalog-group li > a { display: inline-block; margin-top: 8px; font-size: 13px; }
+
 /* footer */
 .bottom {
   padding: 28px 0 40px;
@@ -88,6 +211,9 @@ h2 { margin: 0 0 18px; padding-bottom: 4px; border-bottom: 1px solid var(--line)
   .timeline { margin-top: 32px; }
   .timeline li { grid-template-columns: 1fr; gap: 4px; padding: 18px 0; }
   .when { padding-top: 0; }
+  .to-catalog { margin-top: 36px; }
+  .catalog-group { grid-template-columns: 1fr; }
+  .catalog-label { border-right: 0; border-bottom: 1px solid var(--line); padding: 12px 14px; }
   .bottom { flex-direction: column; align-items: flex-start; }
 }
 @media (prefers-reduced-motion: reduce) {
