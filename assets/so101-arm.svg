@@ -2,23 +2,25 @@
 <style>
 .j{animation-duration:6.5s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1)}
 .s{animation-name:sh}.e{animation-name:el}.w{animation-name:wr}.jaw{animation-name:jw}.gc{animation-name:gc}
-.side{animation:side 6.5s infinite step-end}.front{animation:front 6.5s infinite step-end}
-.c0{animation:c0 6.5s infinite step-end}.c1{animation:c1 6.5s infinite step-end}.c2{animation:c2 6.5s infinite step-end}.tx{animation:tx 6.5s infinite step-end}
+.sideO{animation:sideO 6.5s infinite ease}.sideT{animation-name:sideT}.frontO{animation:frontO 6.5s infinite ease}.frontT{animation-name:frontT}
+.c0{animation:c0 6.5s infinite step-end}.c1{animation:c1 6.5s infinite step-end}.c2{animation:c2 6.5s infinite step-end}.tx{animation:tx 6.5s infinite ease}
 @keyframes sh{0%{transform:rotate(-105deg)}10%{transform:rotate(-22.62deg)}16%{transform:rotate(-16.98deg)}20%{transform:rotate(-16.98deg)}28%{transform:rotate(-36.12deg)}36%{transform:rotate(-59.01deg)}46%{transform:rotate(-59.01deg)}68%{transform:rotate(-59.01deg)}78%{transform:rotate(-59.01deg)}84%{transform:rotate(-36.12deg)}90%{transform:rotate(-16.98deg)}93%{transform:rotate(-16.98deg)}96%{transform:rotate(-22.62deg)}100%{transform:rotate(-105deg)}}@keyframes el{0%{transform:rotate(125deg)}10%{transform:rotate(22.62deg)}16%{transform:rotate(32.42deg)}20%{transform:rotate(32.42deg)}28%{transform:rotate(36.9deg)}36%{transform:rotate(69.31deg)}46%{transform:rotate(69.31deg)}68%{transform:rotate(69.31deg)}78%{transform:rotate(69.31deg)}84%{transform:rotate(36.9deg)}90%{transform:rotate(32.42deg)}93%{transform:rotate(32.42deg)}96%{transform:rotate(22.62deg)}100%{transform:rotate(125deg)}}@keyframes wr{0%{transform:rotate(70deg)}10%{transform:rotate(90deg)}16%{transform:rotate(74.55deg)}20%{transform:rotate(74.55deg)}28%{transform:rotate(89.22deg)}36%{transform:rotate(-10.29deg)}46%{transform:rotate(-10.29deg)}68%{transform:rotate(-10.29deg)}78%{transform:rotate(-10.29deg)}84%{transform:rotate(89.22deg)}90%{transform:rotate(74.55deg)}93%{transform:rotate(74.55deg)}96%{transform:rotate(90deg)}100%{transform:rotate(70deg)}}
 @keyframes jw{0%,16%{transform:rotate(38deg)}20%,90%{transform:rotate(0deg)}93%,100%{transform:rotate(38deg)}}
 @keyframes gc{0%,36%{transform:translate(462px,110px) scale(0.15,1)}46%,68%{transform:translate(292px,118px) scale(1,1)}78%,100%{transform:translate(462px,110px) scale(0.15,1)}}
-@keyframes side{0%{opacity:1}46%{opacity:0}68%{opacity:1}100%{opacity:1}}
-@keyframes front{0%{opacity:0}46%{opacity:1}68%{opacity:0}100%{opacity:0}}
+@keyframes sideO{0%,40%{opacity:1}45%,69%{opacity:0}74%,100%{opacity:1}}
+@keyframes frontO{0%,40%{opacity:0}45%,69%{opacity:1}74%,100%{opacity:0}}
+@keyframes sideT{0%,36%{transform:scale(1,1)}46%,68%{transform:scale(0.15,1)}78%,100%{transform:scale(1,1)}}
+@keyframes frontT{0%,36%{transform:scale(0.15,1)}46%,68%{transform:scale(1,1)}78%,100%{transform:scale(0.15,1)}}
 @keyframes c0{0%{opacity:1}20%{opacity:0}93%{opacity:1}100%{opacity:1}}
 @keyframes c1{0%{opacity:0}20%{opacity:1}46%{opacity:0}68%{opacity:1}93%{opacity:0}100%{opacity:0}}
 @keyframes c2{0%{opacity:0}46%{opacity:1}68%{opacity:0}100%{opacity:0}}
-@keyframes tx{0%{opacity:0}46%{opacity:1}68%{opacity:0}100%{opacity:0}}
+@keyframes tx{0%,42%{opacity:0}46%,68%{opacity:1}72%,100%{opacity:0}}
 .k{fill:#111;stroke:#fff;stroke-width:2.5;stroke-linejoin:round}.d{fill:#fff}
 .t{font:700 15px -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;fill:#fff;text-anchor:middle}
 @media (prefers-reduced-motion:reduce){
-.j,.side,.front,.c0,.c1,.c2,.tx{animation:none}
-.side{opacity:0}.front,.c2,.tx{opacity:1}.c0,.c1{opacity:0}
-.gc{transform:translate(292px,118px) scale(1,1)}
+.j,.sideO,.frontO,.c0,.c1,.c2,.tx{animation:none}
+.sideO{opacity:0}.frontO,.c2,.tx{opacity:1}.c0,.c1{opacity:0}
+.gc{transform:translate(292px,118px) scale(1,1)}.frontT{transform:scale(1,1)}
 }
 </style>
 <rect x="1.25" y="1.25" width="797.5" height="317.5" rx="12" fill="#111" stroke="#5c5c5c" stroke-width="1.5"/>
@@ -28,7 +30,7 @@
 <rect class="k" x="196" y="206" width="38" height="40" rx="4"/>
 <circle class="d" cx="150" cy="251" r="2"/><circle class="d" cx="280" cy="251" r="2"/>
 <g transform="translate(215,200)">
-  <g class="side"><g class="j s">
+  <g class="sideO"><g class="j sideT"><g class="j s">
     <path class="k" d="M0,-13 L130,-8 L130,8 L0,13 Z"/>
     <g transform="translate(130,0)"><g class="j e">
       <path class="k" d="M0,-10 L120,-7 L120,7 L0,10 Z"/>
@@ -48,10 +50,10 @@
         <rect class="k c1" x="56.0" y="-42.0" width="12" height="84" rx="2"/>
       </g></g>
     </g></g>
-  </g></g>
+  </g></g></g>
   <rect class="k" x="-18" y="-18" width="42" height="36" rx="4"/><circle class="d" r="3"/>
 </g>
-<g class="front">
+<g class="frontO"><g transform="translate(215,200)"><g class="j frontT"><g transform="translate(-215,-200)">
   <g transform="translate(215,200) rotate(-46.8)">
     <path class="k" d="M0,-16 L64.5,-12 L64.5,12 L0,16 Z"/>
     <rect class="k" x="36.25" y="-16" width="32" height="32" rx="4"/><circle class="d" cx="52.25" cy="0" r="3"/>
@@ -62,7 +64,7 @@
   <rect class="k" x="332.0" y="80" width="10" height="76" rx="3"/>
   <rect class="d" x="245.0" y="84" width="4" height="8"/>
   <rect class="d" x="335.0" y="84" width="4" height="8"/>
-</g>
+</g></g></g></g>
 <g class="c2"><g class="j gc">
   <rect class="k" x="-40.0" y="-42.0" width="80" height="84" rx="2" vector-effect="non-scaling-stroke"/>
   <g class="tx"><text class="t" y="-5">Hi, how</text><text class="t" y="16">are you?</text></g>
