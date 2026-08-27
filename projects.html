@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects Catalog — Ali Uraish</title>
+  <title>Projects — Ali Uraish</title>
   <meta name="description" content="Projects by Ali Uraish — EnvBasis, Spidey, CaseGraph, Agentalize, ZeroCo, and Ampy.">
   <meta name="theme-color" content="#000000">
   <link rel="icon" type="image/png" href="/assets/favicon.png">
@@ -21,83 +21,75 @@
   </header>
 
   <main>
-    <section class="catalog" aria-labelledby="catalog-title">
-      <div class="catalog-titlebar">
-        <h1 id="catalog-title">Projects Catalog</h1>
-      </div>
-      <div class="catalog-body">
-        <div class="catalog-group">
-          <div class="catalog-label">
-            <h2>Honourable mentions</h2>
-            <p>Cause I loved working on them</p>
-          </div>
-          <ul>
-            <li>
-              <h3>EnvBasis</h3>
-              <p>
-                Open-source secret management built for AI agents. Store API keys once,
-                hand the agent a short-lived runtime token, then rotate, revoke, and audit
-                access without rebuilding or redeploying. Built with my brother.
-              </p>
-              <a href="https://github.com/RahimMirani/envbasis" target="_blank" rel="noreferrer">github.com/RahimMirani/envbasis &rarr;</a>
-            </li>
-            <li>
-              <h3>Spidey</h3>
-              <p>
-                A quadruped spider robot taken from Fusion 360 into MuJoCo. Hand-tuned a
-                crawl gait, trained PPO on top of it, then exported the motion so a
-                Raspberry Pi Pico can play it on the real robot.
-              </p>
-              <a href="https://github.com/AliUraish/Train-quadraple-bot" target="_blank" rel="noreferrer">github.com/AliUraish/Train-quadraple-bot &rarr;</a>
-            </li>
-          </ul>
-        </div>
-        <div class="catalog-group">
-          <div class="catalog-label">
-            <h2>Hackathon projects</h2>
-          </div>
-          <ul>
-            <li>
-              <h3>CaseGraph</h3>
-              <p>
-                An AI investigation platform that turns videos, images, and interviews into
-                an interactive Neo4j knowledge graph. Using TwelveLabs, OpenAI, and AWS
-                Strands, it builds timelines, connects evidence, verifies claims, and writes
-                cited case briefs with exact timestamps.
-              </p>
-              <a href="https://github.com/AliUraish/AWS_Casegraph" target="_blank" rel="noreferrer">github.com/AliUraish/AWS_Casegraph &rarr;</a>
-            </li>
-            <li>
-              <h3>Agentalize</h3>
-              <p>
-                A continuous-improvement control plane for production AI agents. It ties
-                together traces, evaluations, incident memory, and a repository-aware agent
-                that diagnoses failures and proposes tested fixes — with humans still
-                deciding what merges.
-              </p>
-              <a href="https://github.com/AliUraish/Agentalize" target="_blank" rel="noreferrer">github.com/AliUraish/Agentalize &rarr;</a>
-            </li>
-            <li>
-              <h3>ZeroCo</h3>
-              <p>
-                A zero-human company cockpit: agents hire, ship, and open PRs from an ops
-                terminal while the company runs itself. Hackathon project — two processes,
-                a cockpit, and a backend that talks to Terac.
-              </p>
-              <a href="https://github.com/AliUraish/Buisness_Agent" target="_blank" rel="noreferrer">github.com/AliUraish/Buisness_Agent &rarr;</a>
-            </li>
-            <li>
-              <h3>Ampy <span class="place">3rd place</span></h3>
-              <p>
-                A fully agentic e-commerce platform: buyer, seller, and deal-finder agents
-                that search products, resell, and negotiate. Handles inventory, orders,
-                customers, and listings — the whole thing.
-              </p>
-              <a href="https://github.com/AliUraish/Ampy" target="_blank" rel="noreferrer">github.com/AliUraish/Ampy &rarr;</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <h1>Projects</h1>
+
+    <section class="projects" aria-labelledby="mentions-title">
+      <h2 id="mentions-title">Honourable mentions</h2>
+      <p class="note">Cause I loved working on them.</p>
+      <ul>
+        <li>
+          <h3>EnvBasis</h3>
+          <p>
+            Open-source secret management built for AI agents. Store API keys once,
+            hand the agent a short-lived runtime token, then rotate, revoke, and audit
+            access without rebuilding or redeploying. Built with my brother.
+          </p>
+          <a href="https://github.com/RahimMirani/envbasis" target="_blank" rel="noreferrer">github.com/RahimMirani/envbasis &rarr;</a>
+        </li>
+        <li>
+          <h3>Spidey</h3>
+          <p>
+            A quadruped spider robot taken from Fusion 360 into MuJoCo. Hand-tuned a
+            crawl gait, trained PPO on top of it, then exported the motion so a
+            Raspberry Pi Pico can play it on the real robot.
+          </p>
+          <a href="https://github.com/AliUraish/Train-quadraple-bot" target="_blank" rel="noreferrer">github.com/AliUraish/Train-quadraple-bot &rarr;</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="projects" aria-labelledby="hackathons-title">
+      <h2 id="hackathons-title">Hackathon projects</h2>
+      <ul>
+        <li>
+          <h3>CaseGraph</h3>
+          <p>
+            An AI investigation platform that turns videos, images, and interviews into
+            an interactive Neo4j knowledge graph. Using TwelveLabs, OpenAI, and AWS
+            Strands, it builds timelines, connects evidence, verifies claims, and writes
+            cited case briefs with exact timestamps.
+          </p>
+          <a href="https://github.com/AliUraish/AWS_Casegraph" target="_blank" rel="noreferrer">github.com/AliUraish/AWS_Casegraph &rarr;</a>
+        </li>
+        <li>
+          <h3>Agentalize</h3>
+          <p>
+            A continuous-improvement control plane for production AI agents. It ties
+            together traces, evaluations, incident memory, and a repository-aware agent
+            that diagnoses failures and proposes tested fixes — with humans still
+            deciding what merges.
+          </p>
+          <a href="https://github.com/AliUraish/Agentalize" target="_blank" rel="noreferrer">github.com/AliUraish/Agentalize &rarr;</a>
+        </li>
+        <li>
+          <h3>ZeroCo</h3>
+          <p>
+            A zero-human company cockpit: agents hire, ship, and open PRs from an ops
+            terminal while the company runs itself. Hackathon project — two processes,
+            a cockpit, and a backend that talks to Terac.
+          </p>
+          <a href="https://github.com/AliUraish/Buisness_Agent" target="_blank" rel="noreferrer">github.com/AliUraish/Buisness_Agent &rarr;</a>
+        </li>
+        <li>
+          <h3>Ampy <span class="place">3rd place, Mistral AI Vibe Hackathon</span></h3>
+          <p>
+            A fully agentic e-commerce platform: buyer, seller, and deal-finder agents
+            that search products, resell, and negotiate. Handles inventory, orders,
+            customers, and listings — the whole thing.
+          </p>
+          <a href="https://github.com/AliUraish/Ampy" target="_blank" rel="noreferrer">github.com/AliUraish/Ampy &rarr;</a>
+        </li>
+      </ul>
     </section>
   </main>
 
