@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="800" height="320" role="img" aria-label="A robot arm picks up a flat box, turns it around, and shows the words: Hi, how are you?">
 <style>
-.j{animation-duration:13s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1)}
+.j{animation-duration:8s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.45,0,.2,1)}
 .s{animation-name:sh}.e{animation-name:el}.w{animation-name:wr}.fa{animation-name:fA}.fb{animation-name:fB}.flip{animation-name:fl}
-.cg{animation:cg 13s infinite linear}.ch{animation:ch 13s infinite linear}.tx{animation:tx 13s infinite linear}
+.cg{animation:cg 8s infinite linear}.ch{animation:ch 8s infinite linear}.tx{animation:tx 8s infinite linear}
 @keyframes sh{0%{transform:rotate(-105deg)}20%{transform:rotate(-16.53deg)}26%{transform:rotate(-16.53deg)}40%{transform:rotate(-88.31deg)}66%{transform:rotate(-88.31deg)}80%{transform:rotate(-16.53deg)}86%{transform:rotate(-16.53deg)}100%{transform:rotate(-105deg)}}@keyframes el{0%{transform:rotate(125deg)}20%{transform:rotate(32.49deg)}26%{transform:rotate(32.49deg)}40%{transform:rotate(73.81deg)}66%{transform:rotate(73.81deg)}80%{transform:rotate(32.49deg)}86%{transform:rotate(32.49deg)}100%{transform:rotate(125deg)}}@keyframes wr{0%{transform:rotate(70deg)}20%{transform:rotate(74.04deg)}26%{transform:rotate(74.04deg)}40%{transform:rotate(104.51deg)}66%{transform:rotate(104.51deg)}80%{transform:rotate(74.04deg)}86%{transform:rotate(74.04deg)}100%{transform:rotate(70deg)}}
 @keyframes fA{0%,20%{transform:translateY(0)}26%,80%{transform:translateY(10px)}86%,100%{transform:translateY(0)}}
 @keyframes fB{0%,20%{transform:translateY(0)}26%,80%{transform:translateY(-10px)}86%,100%{transform:translateY(0)}}
@@ -28,9 +28,9 @@
     <rect class="k" x="94" y="-14" width="30" height="28" rx="4"/>
     <g transform="translate(120,0)"><g class="j w">
       <rect class="k" x="-4" y="-20" width="28" height="40" rx="4"/><circle class="d" r="3"/>
-      <rect class="k" x="18" y="-68" width="10" height="136"/>
-      <g class="j fa"><path class="k" d="M22,-68 L22,-54 L66,-54 Z"/></g>
-      <g class="j fb"><path class="k" d="M22,68 L22,54 L66,54 Z"/></g>
+      <rect class="k" x="18" y="-66" width="10" height="132" rx="1"/><circle class="d" cx="23" cy="-58" r="1.5"/><circle class="d" cx="23" cy="58" r="1.5"/>
+      <g class="j fa"><path class="k" d="M22,-66 L50,-66 L66,-58 L66,-54 L22,-54 Z"/><rect class="d" x="48" y="-55" width="16" height="2"/></g>
+      <g class="j fb"><path class="k" d="M22,66 L50,66 L66,58 L66,54 L22,54 Z"/><rect class="d" x="48" y="53" width="16" height="2"/></g>
       <g class="ch" transform="translate(60,0) rotate(-90)"><g class="j flip">
         <rect class="k" x="-42.0" y="-28.0" width="84" height="56" rx="2" vector-effect="non-scaling-stroke"/>
         <g class="tx"><text class="t" y="-3">Hi, how</text><text class="t" y="15">are you?</text></g>
